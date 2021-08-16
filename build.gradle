@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'cn.settile.lzjyzq2'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+    implementation 'org.freemarker:freemarker:2.3.31'
+    // https://mvnrepository.com/artifact/com.ibeetl/beetl
+    implementation 'com.ibeetl:beetl:3.3.2.RELEASE'
+    // https://mvnrepository.com/artifact/com.jfinal/jfinal
+    implementation 'com.jfinal:jfinal:4.9.15'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
